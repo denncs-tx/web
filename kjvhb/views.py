@@ -4,7 +4,7 @@ from django.views.generic import ListView
 
 # Create your views here.
 class IndexView(ListView):
-    template_name = 'assets/index.html'
+    template_name = 'kjvhb/index.html'
 
     def get_queryset(self):
         return None
