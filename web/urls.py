@@ -18,7 +18,10 @@ from debug_toolbar.toolbar import debug_toolbar_urls
 from django.contrib import admin
 from django.urls import include, path
 
+from web import views
+
 urlpatterns = [
+    path('', views.home, name='home'),
     path('assets/', include('assets.urls')),
     path('admin/', admin.site.urls),
     path('kjvhb/', include('kjvhb.urls')),
